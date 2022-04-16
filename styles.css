@@ -1,0 +1,86 @@
+*,
+::before,
+::after {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+html {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  height: 720px;
+  width: 480px;
+  background-color: skyblue;
+  border: 20px solid grey;
+  border-radius: 5%;
+}
+
+
+.display-area {
+  border: 2px solid black;
+  margin: 16px;
+}
+
+/* BUTTON CONTAINERS */
+.buttons {
+  display: flex;
+  border: 1px solid red;
+}
+
+.top-buttons {
+  display: flex;
+}
+
+.number-buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  width: 390px;
+  height: 390px;
+}
+
+.bottom-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.function-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* BUTTONS */
+.operator-button {
+  box-sizing: border-box;;
+  background: goldenrod;
+  height: 120px;
+  width: 120px;
+  margin: 5px;
+}
+
+.function-button {
+  box-sizing: border-box;
+  background: teal;
+  height: 120px;
+  width: 120px;
+  margin: 5px;
+}
+
+.num-button {
+  box-sizing: border-box;
+  background: teal;
+  height: 120px;
+  width: 120px;
+  margin: 5px;
+}
