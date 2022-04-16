@@ -18,27 +18,42 @@ html {
 .calculator {
   display: flex;
   flex-direction: column;
-  height: 720px;
-  width: 480px;
+  height: 800px;
+  margin: 96px 0px;
   background-color: skyblue;
   border: 20px solid grey;
   border-radius: 5%;
 }
 
-
 .display-area {
   border: 2px solid black;
   margin: 16px;
+  height: 96px;
+  background-color: olivedrab;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.equation-display {
+
+}
+
+.input-display {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 32px;
+  margin-top: auto;
+  margin-right: 6px;
 }
 
 /* BUTTON CONTAINERS */
 .buttons {
   display: flex;
-  border: 1px solid red;
+  margin: auto 10px 10px 10px;
 }
 
 .top-buttons {
   display: flex;
+  flex-direction: row;
 }
 
 .number-buttons {
@@ -54,33 +69,56 @@ html {
   flex-direction: row;
 }
 
-.function-buttons {
+.right-buttons {
   display: flex;
   flex-direction: column;
 }
-
 
 /* BUTTONS */
 .operator-button {
   box-sizing: border-box;;
   background: goldenrod;
+  box-shadow: darkgoldenrod 2px 2px 1px;
   height: 120px;
   width: 120px;
   margin: 5px;
+  border-radius: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+  text-shadow: black 2px 2px;
 }
 
 .function-button {
   box-sizing: border-box;
-  background: teal;
+  background: darkslategrey;
+  box-shadow: black 2px 2px 1px;
   height: 120px;
   width: 120px;
   margin: 5px;
+  border-radius: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+  text-shadow: black 2px 2px;
 }
 
 .num-button {
   box-sizing: border-box;
   background: teal;
+  box-shadow: darkslategrey 2px 2px 1px;
   height: 120px;
   width: 120px;
   margin: 5px;
+  border-radius: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+  text-shadow: black 2px 2px;
 }
