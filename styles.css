@@ -31,18 +31,16 @@ html {
   height: 96px;
   background-color: olivedrab;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
+.input-display,
 .equation-display {
-
-}
-
-.input-display {
+  color: white;
   font-family: 'Orbitron', sans-serif;
   font-size: 32px;
-  margin-top: auto;
-  margin-right: 6px;
+  margin: auto 6px auto 0px;
 }
 
 /* BUTTON CONTAINERS */
@@ -51,9 +49,15 @@ html {
   margin: auto 10px 10px 10px;
 }
 
-.top-buttons {
+.top-buttons,
+.bottom-buttons {
   display: flex;
   flex-direction: row;
+}
+
+.right-buttons {
+  display: flex;
+  flex-direction: column;
 }
 
 .number-buttons {
@@ -64,15 +68,6 @@ html {
   height: 390px;
 }
 
-.bottom-buttons {
-  display: flex;
-  flex-direction: row;
-}
-
-.right-buttons {
-  display: flex;
-  flex-direction: column;
-}
 
 /* BUTTONS */
 .operator-button {
@@ -121,4 +116,8 @@ html {
   color: white;
   font-size: 32px;
   text-shadow: black 2px 2px;
+}
+
+.zero-button {
+  width: 250px;
 }

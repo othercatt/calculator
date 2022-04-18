@@ -1,4 +1,4 @@
-// OPERATIONS
+// BASIC OPERATIONS
 function add(a, b) {
   const answer = (a + b);
   console.log(answer);
@@ -26,9 +26,21 @@ function divide(a, b) {
   }
 };
 
+function findRoot(num) {
+  return (num ** 0.5);
+  console.log(num ** 0.5);
+}
+
+function reverseSign(num) {
+  return -num;
+}
 
 
-// MATH FUNCTIONS
+// CALCULATOR FUNCTIONS
+
+let equationDisplay = document.getElementsByClassName('equation-display');
+let inputDisplay = document.getElementsByClassName('input-display');
+
 function getAnswer(a, b, operator) {
   let answer;
   if (operator == '+') {
@@ -40,5 +52,10 @@ function getAnswer(a, b, operator) {
   } else if (operator == '/') {
     answer = divide(a, b);
   }
+
   return answer;
+};
+
+function getButtonValue() {
+
 };
