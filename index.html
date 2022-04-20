@@ -16,17 +16,17 @@
     
     <div class='calculator'>
       <div class='display-area'>
-        <p class='equation-display'>123000 + 000456</p>
-        <p class='input-display'>1234567890</p>
+        <span id='equation-display'>0</span>
+        <span id='input-display'>0</span>
       </div>
       
       <div class='buttons'>
         
         <div class='left-buttons'>
           <div class='top-buttons'>
-            <button class='function-button' id='clear-button'>AC</button>
-            <button class='function-button' id='negative-button'>+ / -</button>
-            <button class='function-button' id='square-root-button'>√</button>
+            <button class='function-button clear-button'>AC</button>
+            <button class='function-button negative-button'>+ / -</button>
+            <button class='function-button square-root-button'>√</button>
           </div>
           <div class='middle-buttons'>
             <div class='number-buttons'>
@@ -48,11 +48,11 @@
         </div>
 
         <div class='right-buttons'>
-          <button class='operator-button' value="/" id='divide'> % </button>
-          <button class='operator-button' value="*" id='multiply'> X </button>
-          <button class='operator-button' value="-" id='subtract'> - </button>
-          <button class='operator-button' value="+" id='add'> + </button>
-          <button class='operator-button' value="=" id='calculate'> = </button>
+          <button class='operator-button divide' value="/"> % </button>
+          <button class='operator-button multiply' value="*"> X </button>
+          <button class='operator-button subtract' value="-"> - </button>
+          <button class='operator-button add' value="+"> + </button>
+          <button class='equal-button calculate' value="="> = </button>
         </div>
 
         
@@ -62,7 +62,7 @@
     
   </div>
   
-  <script src='calculator.js' defer></script>
+  <script src='calc.js' defer></script>
 
 </body>
 </html>

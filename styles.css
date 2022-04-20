@@ -35,8 +35,8 @@ html {
   align-items: flex-end;
 }
 
-.input-display,
-.equation-display {
+#input-display,
+#equation-display {
   color: white;
   font-family: 'Orbitron', sans-serif;
   font-size: 32px;
@@ -70,7 +70,8 @@ html {
 
 
 /* BUTTONS */
-.operator-button {
+.operator-button,
+.equal-button {
   box-sizing: border-box;;
   background: goldenrod;
   box-shadow: darkgoldenrod 2px 2px 1px;
