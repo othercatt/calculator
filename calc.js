@@ -30,16 +30,21 @@ function divide(a, b) {
   if(b == 0 || b == '0') {
     let msg = "Sorry, I can't do that, Dave.";
     return msg;
-  } else {
+  } else if (a == 0 || b == '0') {
+    return 0;
+  }else {
     answer = (+a / +b);
-    return answer.toFixed(8);
-    console.log(answer);
+    if (answer.toString().length > 8) {
+      return answer.toFixed(8);
+    } else {
+      return answer;
+    }
+    
   }
 };
 
 function findRoot(num) {
   return (num ** 0.5);
-  console.log(num ** 0.5);
 }
 
 function reverseSign(num) {
@@ -95,7 +100,7 @@ function clickButton() {
           inputDisplay.textContent += buttons[i].value;
         }
       } else if (buttons[i].classList.contains('operator-button')) {
-        if (!firstOperator) {
+        if (firstOperator == null) {
           firstOperator = buttons[i].value;
           firstOperand = parseFloat(inputDisplay.textContent);
           equationDisplay.textContent = `${firstOperand} ${firstOperator}`;
@@ -113,12 +118,13 @@ function clickButton() {
         if (firstOperand && firstOperator) {
           secondOperand = parseFloat(inputDisplay.textContent);
           let answer = getAnswer(firstOperand, secondOperand, firstOperator);
-          equationDisplay.textContent += ' ' + secondOperand;
+          equationDisplay.textContent += ' ' + secondOperand + ' =';
           firstOperand = answer;
           resetFlag = true; 
           secondOperand = null;
           firstOperator = null;
         }
+        
       } else if (buttons[i].classList.contains('clear-button')) {
         clearAll();
       
